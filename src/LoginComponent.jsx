@@ -35,7 +35,7 @@ class LoginComponent extends Component {
             </Grid>
             <Grid item className={classes.loginButton} align='center'>
               <GoogleLogin
-                clientId='754636752811-79anthj9mp3dmrupfe6v6jte309lmth1.apps.googleusercontent.com'
+                clientId='754636752811-h3qllmbjlf79l39ai8nemcgijbp8jsqa.apps.googleusercontent.com'
                 buttonText="Login"
                 scope='https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.appdata'
                 discoveryDocs='https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'

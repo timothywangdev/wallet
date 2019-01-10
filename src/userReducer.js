@@ -4,17 +4,19 @@ const initState = {
   profile: {
     isAuthenticated: false
   },
-  wallets: [],
+  wallet: []
 }
 
 export default function (state = initState, action) {
   switch (action.type) {
-  case 'LOGIN':
-    return {
-      ...state,
-      profile: action.payload.profile
-    }
-  default: // need this for default case
-    return state
+    case 'LOGIN':
+      return {
+        ...state,
+        profile: action.payload.profile
+      }
+    case 'CREATE_ADDRESS_FULFILLED':
+      return update(state, { wallet: { $push: [action.payload] } })
+    default: // need this for default case
+      return state
   }
 }
