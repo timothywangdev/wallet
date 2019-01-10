@@ -1,5 +1,4 @@
 async function saveFile (file) {
-  console.log(window.gapi)
   if (!window.gapi.client.drive) {
     await window.gapi.client.load('drive', 'v3')
   }
@@ -31,7 +30,6 @@ async function saveFile (file) {
     })
   } else {
     // create and update
-    console.log(window.gapi.client.drive.files)
     let resp = await window.gapi.client.drive.files.create({
       resource: metadata
     })
