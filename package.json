@@ -14,6 +14,8 @@
     "gapi-client": "0.0.3",
     "googleapis": "^27.0.0",
     "immutability-helper": "^2.8.1",
+    "install": "^0.12.2",
+    "npm": "^6.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-google-login": "^4.0.1",
@@ -28,6 +30,7 @@
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
     "typeface-roboto": "0.0.54",
+    "uuid": "^3.3.2",
     "web3": "^1.0.0-beta.37"
   },
   "scripts": {

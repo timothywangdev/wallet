@@ -4,11 +4,11 @@ import Typography from '@material-ui/core/Typography'
 import { createMuiTheme, withStyles } from '@material-ui/core/styles'
 import { GoogleLogin } from 'react-google-login'
 import logo from './logo.svg'
-import { onLogin } from './actions.js'
 
 class LoginComponent extends Component {
   loginSuccess = async (response) => {
     console.log('login success')
+    console.log(this.props)
     this.props.onLogin(response)
   }
 
@@ -35,7 +35,7 @@ class LoginComponent extends Component {
             </Grid>
             <Grid item className={classes.loginButton} align='center'>
               <GoogleLogin
-                clientId='754636752811-bj2dnmm4jo44p41ef5lt33edlbcvbdog.apps.googleusercontent.com'
+                clientId='754636752811-9kgfo02necis24581dvo42sadh2f9fqs.apps.googleusercontent.com'
                 buttonText="Login"
                 scope='https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.appdata'
                 discoveryDocs='https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'

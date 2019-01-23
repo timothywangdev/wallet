@@ -7,7 +7,8 @@ import {
 import { connectedRouterRedirect } from 'redux-auth-wrapper/history4/redirect'
 import locationHelperBuilder from 'redux-auth-wrapper/history4/locationHelper'
 import LoginContainer from './LoginContainer'
-import WalletComponent from './WalletComponent'
+import WalletContainer from './WalletContainer'
+import TransferContainer from './TransferContainer'
 
 const userIsAuthenticated = connectedRouterRedirect({
   // The url to redirect user to if they fail
@@ -63,7 +64,8 @@ class App extends Component {
       <Router>
         <Switch>
           <Route path='/login' component={userIsNotAuthenticated(LoginContainer)} />
-          <DefaultLayout exact path='/' component={userIsAuthenticated(WalletComponent)} />
+          <DefaultLayout exact path='/' component={userIsAuthenticated(WalletContainer)} />
+          <DefaultLayout exact path='/send' component={userIsAuthenticated(TransferContainer)} />
         </Switch>
       </Router>)
   }
