@@ -28,7 +28,7 @@ async function init () {
     console.log('loading client ... ')
     let config =  {
       scope: 'https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.appdata',
-      client_id: '754636752811-9kgfo02necis24581dvo42sadh2f9fqs.apps.googleusercontent.com',
+      client_id: '754636752811-bdve3j98l74duv96vit2hqm635io3cjv.apps.googleusercontent.com',
     }
     window.gapi.load('client', async function () {
       console.log('loading client done. ')

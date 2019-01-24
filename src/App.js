@@ -65,7 +65,7 @@ class App extends Component {
         <Switch>
           <Route path='/login' component={userIsNotAuthenticated(LoginContainer)} />
           <DefaultLayout exact path='/' component={userIsAuthenticated(WalletContainer)} />
-          <DefaultLayout exact path='/send' component={userIsAuthenticated(TransferContainer)} />
+          <DefaultLayout path='/send' component={TransferContainer} />
         </Switch>
       </Router>)
   }
